@@ -1,0 +1,25 @@
+[project]
+name = "compslot"
+version = "1.0.0"
+description = "Official code for ICLR 2026 Oral: Plug-and-Play Compositionality for Boosting Continual Learning with Foundation Models"
+readme = "README.md"
+requires-python = ">=3.8.0, <=3.12.0"
+dependencies = [
+    "torch==2.0.1",
+    "torchvision==0.15.2",
+    "timm==0.6.12", 
+    "einops",
+    "tqdm", 
+    "numpy>=1.21,<2.0",
+    "scipy", 
+    "easydict", 
+    "pyaml", 
+    "pillow", 
+    "opencv-python", 
+    "scikit-learn"
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.ustc.edu.cn/pypi/simple"
+default = true
+

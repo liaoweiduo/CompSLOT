@@ -1,0 +1,35 @@
+{
+    "prefix": "",
+    "dataset": "cfst_cgqa",
+    "comp_test": false,
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": false,
+    "shuffle": true,
+    "init_cls": 10,
+    "increment": 10,
+    "model_name": "cprompt",
+    "backbone_type": "vit_base_patch16_224_cprompt",
+    "device": ["0"],
+    "seed": [100, 200, 300],
+    "pretrained": true,
+    
+    "tuned_epoch": 18,
+    "init_lr": 0.01,
+    "batch_size": 32,
+    "weight_decay": 5e-4,
+
+    "tau": 1.2,
+    "margin":0,
+    "alpha":1.0,
+    "prompt_len": 50,
+
+    "use_slot": true, 
+    "slot_project": "slots",
+    "slot_prefix": "cgqa_teacher",
+    "slot_args": "exps/slot_cgqa.json",
+    "use_s_l_reg": true,
+    "s_l_reg_coeff": 10,
+    "l_reg_temp": 0.05, 
+    "s_l_reg_loss_mode": "kl"
+}

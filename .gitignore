@@ -1,0 +1,11 @@
+data
+logs/
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+*.ipynb
+*.pdf
+.DS_Store
+*.csv
+uv.lock
